@@ -40,9 +40,6 @@ class NavBar extends Component {
     render() {
         return (
             <div>
-                <Fade>
-                    <div className='navbar-overlay'>
-
                         <Navbar expand="md" dark className={`fixed-top ${this.state.changeColor ? 'bg-faded' : 'bg-dark'}`}
                             style={{ lineHeight: '30px', transition: 'all .5s ease' }} >
                             <NavbarBrand href="/" className={`font-weight-bold steelcorp-navbar-brand`} style={{
@@ -121,8 +118,6 @@ class NavBar extends Component {
                         </Navbar>
 
                     </div>
-                </Fade>
-            </div >
         )
     }
 }
